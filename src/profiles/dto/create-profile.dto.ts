@@ -51,15 +51,19 @@ export class CreateProfileDto {
   @IsOptional()
   reseaux_sociaux_entreprise?: Record<string, any>;
 
-  @IsOptional()
-  @IsString()
-  url_logo_entreprise?: string;
+  // @IsOptional()
+  // @IsString()
+  // url_logo_entreprise?: string;
 
-  @IsOptional()
-  @IsString()
-  url_professionnel_photo?: string;
+  // @IsOptional()
+  // @IsString()
+  // url_professionnel_photo?: string;
 
   @IsOptional()
   @IsEnum(EtatProfil)
   etat?: EtatProfil;
+
+  @IsOptional()
+  @IsString()
+  pallette_couleur?: string;  
 }

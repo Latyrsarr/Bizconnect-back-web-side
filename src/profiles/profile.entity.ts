@@ -73,6 +73,9 @@ export class Profile {
   })
   etat: EtatProfil;
 
+  @Column({ nullable: true })
+  pallette_couleur: string;
+
   @CreateDateColumn()
   createdAt: Date;
 
